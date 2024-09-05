@@ -28,12 +28,16 @@ namespace Laboratorio5
             Console.WriteLine($"Numero de Tarea: {IdTarea}");
             Console.WriteLine($"Nombre: {Nombre}");
             Console.WriteLine($"Descripcion: {Descripcion}");
-            Console.WriteLine($"Estado: {Estado}");
+            Console.WriteLine($"Estado: {(Estado ? "Completada" : "Pendiente")}");
             Console.WriteLine("----------------------------------------------");
-            if (Estado = true)
+            if (Estado )
+            {
                 Console.WriteLine("Tarea Completada");
+            }
             else
+            {
                 Console.WriteLine("Tarea Pendiente");
+            }
 
         }
     }

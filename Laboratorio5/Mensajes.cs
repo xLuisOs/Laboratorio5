@@ -26,5 +26,11 @@ namespace Laboratorio5
             Console.WriteLine("Esta opción no existe"); Console.ResetColor();
             Continuar();
         }
+        public void NoHayTareas()
+        {
+            Console.ForegroundColor = ConsoleColor.DarkYellow;
+            Console.WriteLine("No hay tareas para mostrar.");
+            Console.ResetColor();
+        }
     }
 }
